@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.serviceHero{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../assets/Images/serviceHero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+   overflow: hidden;
+    
+}
+
+.serviceHero::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+/* background-color: rgba(173, 216, 230, 0.5);  */
+background-color: rgba(0, 0, 0, 0.5);
+pointer-events: none;
+}
+
+
+
+
+
+
+.services{
+    width: 100%;
+    height: 120vh;
+    background-color: #f6f5fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesH1 {
+    font-size: 46px;
+    color: #4169E1;
+    font-family: "Roboto";
+    font-weight: 700;
+    margin-top: 2%;
+}
+
+.serviceCardHolder{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    
+}
+
+.serviceCardWrapper{
+   width: 80%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   gap: 30px;
+   flex-wrap: wrap;
+}
+
+.serviceCard{
+    width: 20%;
+    height:45%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-wrap: pretty;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #A7B9F1;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 0.6s ease-in-out;
+    
+} 
+
+.circle{
+    width: 60px;
+    height: 60px;
+    background-color: #7B97EA;
+    border-radius: 50%;
+    margin-top: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img{
+    width: 60%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.titles{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titles h1{
+    font-size: 19px;
+    font-family: "Roboto";
+    color: #18399A;
+    font-weight: 900;
+
+}
+
+.paragraph{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph p{
+    font-size: 15px;
+    font-family: "Roboto";
+    line-height: 1.9;
+    text-align: center;
+    color: #545454;
+}
+
+.divButton{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divButton button{
+    width: 65%;
+    height: 40px;
+    background-color: #4169E1;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.divButton button:hover{
+    background-color:  #E18C00;
+    color: white;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+
+.serviceCard:hover {
+  transform: translateY(-10px);
+  /* transform: rotateY(360deg); */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-style: dotted;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+.signUpNav{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpWrap{
+    width: 85%;
+    height: 80%;
+    background-color: #4169E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+}
+
+.signUpWrap h1{
+        font-size: 48px;
+        color: white;
+        font-weight: 900;
+        font-family: "Roboto";
+}
+
+.signUpWrap h4{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.signUpWrap p{
+    font-size: 18px;
+    color: white;
+    font-family: "Roboto";
+}
+
+
+.callAction{
+    width: 60%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.callAction button{
+        width: 20%;
+        height: 42px;
+        color: #4169E1;
+        background-color: white;
+        border-radius: 30px;
+        cursor: pointer;
+        transform: scale(1);
+        border: none;
+        font-weight: 800;
+        font-size: 18px;
+        font-family: "Roboto";
+}
+
+.callAction button:hover{
+    border: 2px solid #E18C00;
+    color: #E18C00;
+    background-color: white;
+    cursor: pointer;
+    transition: all 1s;
+    cursor: pointer;
+}

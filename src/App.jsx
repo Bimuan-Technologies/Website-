@@ -1,9 +1,10 @@
 
 import './App.css'
-import { Routes, Route } from "react-router-dom";
+import {HashRouter, Routes, Route} from 'react-router-dom'
 import Home from './Components/Home/Home';
+import Services from './Components/pages/services/Services';
 // import Services from './Components/pages/services/Services';
-// import Header from './Components/Header/Header'
+
 
 
 
@@ -11,10 +12,12 @@ function App() {
   
 
   return (
-    <>
-    <Home/>
-
-    </>
+    <HashRouter>
+    <Routes>
+      <Route  path='/' element={<Home/>}/>
+      <Route path="/service" element={<Services/>} />
+    </Routes>
+   </HashRouter>
   )
 }
 

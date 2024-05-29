@@ -58,7 +58,7 @@
 }
 
 .animate-charcter{
-    text-transform: lowercase;
+    /* text-transform: uppercase; */
    background-image: linear-gradient(
      -225deg,
      #231557 0%,
@@ -200,7 +200,7 @@
 
 .whyChooseHolder{
     width: 100%;
-    height: 350vh;
+    height: 320vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,7 +266,7 @@
 }
 
 .bimuanRight{
-   width: 30%;
+   width: 32%;
    height: 100%;
    display: flex;
    flex-direction: column;
@@ -276,18 +276,18 @@
 }
 
 .bimuanCardsLefts{
-    width: 65%;
-    height: 90%;
+    width: 63%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom-right-radius: 40px;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .bimuanCardsLefts img{
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
     border-bottom-right-radius: 40px;
 
@@ -660,11 +660,10 @@
 }
 .boldText h1{
     font-size: 60px;
-    width: 70%;
+    width: 75%;
     font-family: "Raleway";
 }
 .animate-charcter{
-    text-transform: lowercase;
    background-image: linear-gradient(
      -225deg,
      #231557 0%,

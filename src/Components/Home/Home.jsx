@@ -28,13 +28,13 @@ const Home = () => {
             <h1 className="animate-charcter">Bimuan Technologies</h1>
             <h3>Fostering Digital Innovation</h3>
             <p className="heroPTag">
-              Specialization in AI, software developmwnt, cloud computing,
+              Specialization in AI, software development, cloud computing,
               cybersecurity, blockchain, and IoT solutions.
             </p>
 
             <div className="started">
               <button className="start">
-                <p>Get Started</p>
+                <p>Contact Us</p>
               </button>
             </div>
           </div>
@@ -78,7 +78,7 @@ const Home = () => {
 
           <div className="lowerWrap">
             <div className="bimuanCarde">
-              <div className="bimuanLeft">
+              <div className="bimuanCardsLefts">
                 <img src={innovate} alt="innovation" />
               </div>
               <div className="bimuanRight">

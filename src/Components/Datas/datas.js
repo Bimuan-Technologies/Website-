@@ -21,35 +21,36 @@ const Data = [
         id: 2,
         image : blockchain,
         title: "BLOCKCHAIN",
-        desc: " Migrate your data and applications to the cloud for enhanced accessibility, scalability, and cost-efficiency.",
+        desc: "	Explore the potential of blockchain for secure data storage, and  traceability in your supply chain or financial operations.",
         
     },
     {
         id: 3,
         image : AI,
         title: "AI OPTIMIZATION",
-        desc: "From web and mobile apps to complex enterprise solutions, our skilled developers bring your ideas to life with precision and innovation.",
+        desc: "Integrate intelligent automation and machine learning capabilities into your business processes. ",
     
     },
     {
         id: 4,
         image : cloud,
         title: "CLOUD COMPUTING",
-        desc: "Integrate intelligent automation and machine learning capabilities into your business processes.",
+        desc: "Migrate your data and applications to the cloud for enhanced accessibility, scalability, and cost-efficiency.",
         
     },
     {
         id: 5,
         image : cybersecurity,
         title: "CYBERSECURITY",
-        desc: "From web and mobile apps to complex enterprise solutions, our skilled developers bring your ideas to life with precision and innovation.",
+        desc: "Protect your critical infrastructure and data from cyber threats with our comprehensive security solutions."
+        
         
     },
     {
         id: 6,
         image : IOT,
         title: "INTERNET OF THINGS",
-        desc: "From web and mobile apps to complex enterprise solutions, our skilled developers bring your ideas to life with precision and innovation.",
+        desc: "	Design and develop custom Internet of Things (IoT) devices to collect real-time sensor data from your environment.",
         
     }
 

@@ -3,6 +3,7 @@ import "./Header.css"
 import logo from "../../assets/Images/logo.png"
 import { IoMdArrowDropdown } from "react-icons/io";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -58,8 +59,12 @@ return(
 
                 <div className="headerNavs">
                 <span className={nav ? "nav active": "nav"}>
-                <p>Services</p>
-                <IoMdArrowDropdown />
+                    <NavLink 
+                    className="navs"
+                    to="/service">
+                    <p>Services</p>
+                    </NavLink >
+                    <IoMdArrowDropdown />
                 </span>
                 <span className={nav ? "nav active": "nav"}>
                    <p>Products</p> 

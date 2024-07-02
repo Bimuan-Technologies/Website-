@@ -32,7 +32,7 @@ const Profilecard= [
         image : mosey,
         title: "Dr. Moses",
         desc: "CTO & Backend Developer",
-        data: "His mastery of Javascript, Typescript and flutter allows him tackle complex development challenges with innovative solutions ", 
+        data: "His mastery of Javascript, and flutter allows him tackle complex development challenges with innovative solutions ", 
         url: "https://www.linkedin.com/in/inedumozey",
         url2: "https://x.com/inedu_mozey",
         url3: "https://www.instagram.com/mozey_inedu"

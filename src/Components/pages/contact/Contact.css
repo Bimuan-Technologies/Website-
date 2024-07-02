@@ -126,7 +126,33 @@ form h1{
 
 
 @media (min-width: 768px) and (max-width: 991px){
-   
+    .formWrap{
+        width: 100%;
+        height: 100%;
+    } 
+
+    .myForm{
+        width: 80%;
+        height: 80%;
+        gap: 0;
+    }
+
+    .myForm h1{
+        font-size: 40px;
+        font-weight: 900;
+        margin-top: 3%;
+    }
+
+    .myForm p{
+        font-size: 20px;
+        margin-top: 3%;
+    }
+
+    .sendBtn{
+        width: 45%;
+        height: 60px;
+        font-size: 20px;
+    }
 }
 
 @media screen and (width <= 428px){
@@ -134,5 +160,24 @@ form h1{
         width: 100%;
         height: 100%;
     } 
+
+    .myForm{
+        width: 80%;
+        height: 80%;
+        gap: 0;
+    }
+
+    .myForm h1{
+        font-size: 25px;
+        font-weight: 900;
+        margin-top: 3%;
+    }
+
+    .myForm p{
+        font-size: 12px;
+        margin-top: 3%;
+    }
+
+    
 }
 

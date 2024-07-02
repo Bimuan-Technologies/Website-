@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.founderHolder{
+    width: 100%;
+    height: 80vh;
+}
+
+.founderHolder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.keyPillarsHolder{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyPillarsWrap{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.PillarIntro{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.keyTitle{
+    font-size: 40px;
+    color: #4169E1;
+}
+
+.keyDes{
+    font-size: 19px;
+    color: #575452;
+    width: 40%;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.pillarCardHolder{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pillarCardWrap{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    /* background-color: blue; */
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.pillarCard{
+    width: 33%;
+    height: 60%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 8px;
+    transform: scale(1);
+}
+
+.pillarImage{
+    width: 55px;
+    height: 55px;
+    background-color: #e08a00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 3%;
+}
+
+.pillarImage img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.pillarText{
+    width: 95%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 3%;
+}
+
+.pillarText p{
+    font-size: 16px;
+    line-height: 1.2;
+    color: #575452;
+}
+
+.pillarText h2{
+    font-weight: 900;
+    color: #4169E1;
+    font-size: 22px;
+}
+
+.pillarCard:hover{
+    background-color: black;
+    transition: ease-in 2s;
+}
+
+.pillarCard p:hover{
+    color: white;
+}
+
+.pillarCard h2:hover{
+    color: white;
+}
+
+.click{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joinn{
+    width: 250px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    border: 1px solid #4169E1;
+    color: #4169E1;
+    transform: scale(1);
+    border-radius: 30px;
+}
+
+
+.joinn:hover{
+    border: 1px solid #e18c00;
+    color: #e18c00;
+    cursor: pointer;
+  transition: all 1s;
+}
+
+.teamPictureHolder{
+    width: 100%;
+    height: 100vh;
+    background-color: #e6e2df;
+    background-color: #2234ae;
+    background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamPicturesWrap{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.teamPicturesWrap h1{
+    font-size: 48px;
+    color: white;
+}
+
+.profileCardWrap{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.profileCard{
+    width: 20%;
+    height: 55%;
+    background-color: rgba(255,255,255,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    /* border: 2px solid #4169E1; */
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    gap: 30px;
+    transform: scale(1);
+}
+
+.imageFrame{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+ margin-top: -70%;
+ border-top-left-radius: 50%;
+ border-top-right-radius: 50%;
+ border-bottom-right-radius: 45%;
+ border-bottom-left-radius: 2%;
+}
+
+.imageFrame img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 50%;
+ border-top-right-radius: 50%;
+ border-bottom-right-radius: 45%;
+ border-bottom-left-radius: 2%;
+}
+
+.profileText{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.profileCard:hover{
+    border: 2px solid #e18c00;
+    transition: all 1s;
+}
+
+.profileText h2{
+    color: white;
+    font-size: 25px;
+}
+
+.profileText h3{
+    color: #e18c00;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.profileText p{
+    font-size: 13px;
+}
+
+.reach{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reach:hover{
+    color: white;
+}
+
+

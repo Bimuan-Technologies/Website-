@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tooltip{
+    position: relative;
+    display: block;
+}
+
+.tooltip-text{
+    visibility: hidden;
+    background-color: azure;
+    color: #4169E1;
+    text-align: justify;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    white-space: no-wrap;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: visibility 0s, opacity .5s;
+}
+
+.tooltip > .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+

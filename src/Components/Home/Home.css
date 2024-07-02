@@ -23,8 +23,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
-
-
+    position: absolute;
     
 }
 .heroHolderText{
@@ -100,6 +99,7 @@
 .started{
     width: 100%;
     height: 30%;
+   
 }
 
 .start{
@@ -115,6 +115,10 @@
     font-weight: 900;
     cursor: pointer;
     transform: scale(1);
+}
+
+.start p{
+    color: white;
 }
 
 .start:hover{
@@ -197,6 +201,268 @@
       transform: translateX(200px); /* End position, adjust the distance as needed */
     }
   }
+
+@media (min-width: 768px) and (max-width: 991px){
+    .heroHolder{
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+
+    }
+    .heroHolderWrap{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        position: absolute;
+    } 
+
+
+    .heroHolderImage{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ }
+
+
+.heroHolderImage img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}   
+
+.heroHolderText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7%;
+}
+
+.heroHolderText h1{
+    font-size: 70px;
+    color: #4169E1;
+    font-family: "Roboto";
+    font-weight: 900;
+}
+
+.heroHolderText h3{
+    font-size: 40px;
+    color: #4169E1;
+    font-family: "Roboto";
+}
+
+.heroPTag {
+    font-size: 28px;
+    width: 100%;
+    color: #4169E1;
+    font-family: "Roboto";
+    line-height: 1.5;
+ }
+
+ .scatteredImages{
+    display: none;
+ }
+
+ .start{
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #4169E1;
+    /* border: 2px solid #4169E1; */
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 900;
+    cursor: pointer;
+    transform: scale(1);
+    
+}
+
+.start p{
+    color: white;
+    font-size: 32px;
+}  
+}
+
+  @media (min-width: 376px) and (max-width: 428px){
+   
+    .heroHolder{
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+
+    }
+    .heroHolderWrap{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        position: absolute;
+    } 
+
+
+    .heroHolderImage{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+ }
+
+
+.heroHolderImage img{
+    max-width: 350px;
+    height: 350px;
+    object-fit: cover;
+}   
+
+.heroHolderText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8%;
+}
+
+.heroHolderText h1{
+    font-size: 30px;
+    color: #4169E1;
+    font-family: "Roboto";
+    font-weight: 900;
+}
+
+.heroHolderText h3{
+    font-size: 20px;
+    color: #4169E1;
+    font-family: "Roboto";
+}
+
+.heroPTag {
+    font-size: 18px;
+    width: 100%;
+    color: #4169E1;
+    font-family: "Roboto";
+ }
+
+ .scatteredImages{
+    display: none;
+ }
+
+ .start{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #4169E1;
+    /* border: 2px solid #4169E1; */
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 900;
+    cursor: pointer;
+    transform: scale(1);
+    
+}
+
+.start p{
+    color: white;
+    font-size: 20px;
+}
+  }
+  @media screen and (width <= 375px){
+
+    .heroHolder{
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+
+    }
+    .heroHolderWrap{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        position: absolute;
+    } 
+
+
+    .heroHolderImage{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+ }
+
+
+.heroHolderImage img{
+    max-width: 350px;
+    height: 350px;
+    object-fit: cover;
+}   
+
+.heroHolderText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.heroHolderText h1{
+    font-size: 30px;
+    color: #4169E1;
+    font-family: "Roboto";
+    font-weight: 900;
+}
+
+.heroHolderText h3{
+    font-size: 20px;
+    color: #4169E1;
+    font-family: "Roboto";
+}
+
+.heroPTag {
+    font-size: 18px;
+    width: 100%;
+    color: #4169E1;
+    font-family: "Roboto";
+ }
+
+ .scatteredImages{
+    display: none;
+ }
+
+ .start{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #4169E1;
+    /* border: 2px solid #4169E1; */
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 900;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.start p{
+    color: white;
+    font-size: 19px;
+}
+  }
+
 
 .whyChooseHolder{
     width: 100%;
@@ -380,6 +646,330 @@
     transition: all 1s;
 }
 
+@media (min-width: 768px) and (max-width: 991px){
+    .whyChooseHolderWrap{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+         align-items: center;
+        flex-direction: column;
+        gap: 2%;
+    } 
+
+    .whyChooseHolderWrap h1{
+        font-size: 56px;
+        text-align: center;
+    
+    }   
+
+    .lowerWrap{
+        gap: 1%;
+    }
+    .bimuanCarde{
+        width: 90%;
+        height: 35%;
+         display: flex;
+         justify-content: space-between;
+         flex-direction: column;
+    }
+
+    .bimuanCardsLefts{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-right-radius: 40px;
+    }  
+
+    .bimuanRight{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+         gap: 28px;
+     }
+
+     .bimuanRight h2{
+        font-size: 50px;
+    }
+    
+    .bimuanRight p{
+        /* width: 60%;
+        font-size: 15px;
+        line-height: 1.8; */
+        width: 80%;
+        font-size: 24px;
+        line-height: 1.9;
+    }
+
+    .bimuanRight button{
+        width: 90%;
+        height: 80px;
+        font-size: 22px;
+        font-weight: 900;
+    } 
+   
+    
+    .bimuanCard{
+        width: 90%;
+        height: 35%;
+         display: flex;
+         justify-content: space-between;
+         flex-direction: column-reverse;
+    }
+    
+
+    .bimuanCardsLefts{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-right-radius: 40px;
+    }
+
+    .bimuanCardRights{
+        width: 100%;
+     }
+
+     .bimuanCardRights h2{
+        font-size: 50px;
+    }
+    
+    .bimuanCardRights p{
+        width: 80%;
+        font-size: 24px;
+        line-height: 1.9;
+    }
+    
+    .bimuanCardRights button{
+        width: 90%;
+        height: 80px;
+        font-size: 22px;
+        font-weight: 900;
+    }
+
+    .bimuanLeft{
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 376px) and (max-width: 428px){
+    .whyChooseHolderWrap{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+         align-items: center;
+        flex-direction: column;
+        gap: 2%;
+    } 
+
+    .whyChooseHolderWrap h1{
+        font-size: 30px;
+        text-align: center;
+    
+    }   
+
+    .lowerWrap{
+        
+        gap: 1%;
+    }
+    .bimuanCarde{
+        width: 95%;
+        height: 35%;
+         display: flex;
+         justify-content: space-between;
+         flex-direction: column;
+    }
+
+    .bimuanCardsLefts{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-right-radius: 40px;
+    }  
+
+    .bimuanRight{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+         gap: 25px;
+     }
+
+     .bimuanRight h2{
+        font-size: 25px;
+    }
+    
+    .bimuanRight p{
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .bimuanRight button{
+        width: 100%;
+        height: 40px;
+    } 
+   
+    
+    .bimuanCard{
+        width: 95%;
+        height: 35%;
+         display: flex;
+         justify-content: space-between;
+         flex-direction: column-reverse;
+    }
+    
+
+    .bimuanCardsLefts{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-right-radius: 40px;
+    }
+
+    .bimuanCardRights{
+        width: 100%;
+     }
+
+     .bimuanCardRights h2{
+        font-size: 23px;
+        width: 100%;
+    }
+    
+    .bimuanCardRights p{
+        width: 100%;
+    }
+    
+    .bimuanCardRights button{
+        width: 100%;
+        height: 40px;
+    }
+
+    .bimuanLeft{
+        width: 100%;
+    }
+ 
+}
+@media screen and (width <= 375px){
+    .whyChooseHolderWrap{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+         align-items: center;
+        flex-direction: column;
+        gap: 2%;
+    } 
+
+    .whyChooseHolderWrap h1{
+        font-size: 30px;
+        text-align: center;
+    
+    }   
+
+    .lowerWrap{
+        
+        gap: 1%;
+    }
+    .bimuanCarde{
+        width: 95%;
+        height: 35%;
+         display: flex;
+         justify-content: space-between;
+         flex-direction: column;
+    }
+
+    .bimuanCardsLefts{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-right-radius: 40px;
+    }  
+
+    .bimuanRight{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+         gap: 25px;
+     }
+
+     .bimuanRight h2{
+        font-size: 25px;
+    }
+    
+    .bimuanRight p{
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .bimuanRight button{
+        width: 90%;
+        height: 40px;
+    } 
+   
+    
+    .bimuanCard{
+        width: 95%;
+        height: 35%;
+         display: flex;
+         justify-content: space-between;
+         flex-direction: column-reverse;
+    }
+    
+
+    .bimuanCardsLefts{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-right-radius: 40px;
+    }
+
+    .bimuanCardRights{
+        width: 100%;
+     }
+
+     .bimuanCardRights h2{
+        font-size: 23px;
+        width: 100%;
+    }
+    
+    .bimuanCardRights p{
+        width: 100%;
+    }
+    
+    .bimuanCardRights button{
+        width: 90%;
+        height: 40px;
+    }
+
+    .bimuanLeft{
+        width: 100%;
+    }
+
+
+      
+}
+
+  
 
 .services{
     width: 100%;
@@ -532,6 +1122,336 @@
   }
 }
 
+.serviceCardHolder-mobile{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    display: none;
+}
+
+.serviceCardWrapper-mobile{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.serviceCard-mobile{
+    width: 20%;
+    height:45%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-wrap: pretty;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #A7B9F1;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.circle-mobile{
+    width: 60px;
+    height: 60px;
+    background-color: #7B97EA;
+    border-radius: 50%;
+    margin-top: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-mobile img{
+    width: 60%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.titles-mobile{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titles-mobile h1{
+    font-size: 19px;
+    font-family: "Roboto";
+    color: #18399A;
+    font-weight: 900;
+}
+
+.paragraph-mobile{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph-mobile p{
+    font-size: 13px;
+    font-family: "Roboto";
+    line-height: 1.9;
+    text-align: center;
+    color: #545454;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .services{
+        width: 100%;
+        height: 120vh;
+        background-color: #f6f5fa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .services .serviceCardHolder{
+        display: none;
+    }
+
+    .services .servicesH1{
+        font-size: 50px;
+        /* margin-top: 2%; */
+    }
+ .serviceCardHolder-mobile{
+    display: flex;
+    height: 92%;
+}
+    .services .serviceCardWrapper-mobile{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .services .serviceCard-mobile{
+        width: 100%;
+        height: 30%;
+    }
+     .services .serviceCard-mobile:hover{
+        transform: translateY(-10px);
+        /* transform: rotateY(360deg); */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-style: dotted;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+    .circle-mobile{
+        width: 60px;
+        height: 60px;
+        background-color: #7B97EA;
+        border-radius: 50%;
+        margin-top: -35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .circle-mobile img{
+        width: 60%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .titles-mobile{
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titles-mobile h1{
+        font-size: 45px;
+        font-family: "Roboto";
+        color: #18399A;
+        font-weight: 900;
+    }
+
+    .divButton-mobile{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .divButton-mobile button{
+        height: 75px;
+        width: 65%;
+    background-color: #4169E1;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+
+
+.divButton-mobile button:hover{
+    background-color:  #E18C00;
+    color: white;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.paragraph-mobile{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph-mobile p{
+    font-size: 28px;
+    font-family: "Roboto";
+    line-height: 1.9;
+    text-align: center;
+    color: #545454;
+}
+}
+@media screen and (width <= 428px){
+    .services{
+        width: 100%;
+        height: 120vh;
+        background-color: #f6f5fa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .services .serviceCardHolder{
+        display: none;
+        width: 92%;
+    }
+
+    .services .servicesH1{
+        font-size: 23px;
+        /* margin-top: 2%; */
+    }
+ .serviceCardHolder-mobile{
+    display: flex;
+}
+    .services .serviceCardWrapper-mobile{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .services .serviceCard-mobile{
+        width: 100%;
+        height: 30%;
+    }
+     .services .serviceCard-mobile:hover{
+        transform: translateY(-10px);
+        /* transform: rotateY(360deg); */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-style: dotted;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+    .circle-mobile{
+        width: 40px;
+        height: 40px;
+        background-color: #7B97EA;
+        border-radius: 50%;
+        margin-top: -10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .circle-mobile img{
+        width: 60%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .titles-mobile{
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titles-mobile h1{
+        font-size: 15px;
+        font-family: "Roboto";
+        color: #18399A;
+        font-weight: 900;
+    }
+
+    .divButton-mobile{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .divButton-mobile button{
+        height: 35px;
+        width: 65%;
+    background-color: #4169E1;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+
+
+.divButton-mobile button:hover{
+    background-color:  #E18C00;
+    color: white;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+}
 
 .signUpNav{
     width: 100%;
@@ -605,6 +1525,111 @@
     cursor: pointer;
     transition: all 1s;
     cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .signUpNav{
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+    }
+
+   .signUpNav .signUpWrap{
+        width: 90%;
+        height: 80%;
+        gap: 5%;
+    }
+
+   .signUpNav .signUpWrap h4{
+        font-size: 30px;
+        color: white;
+        margin-top: 10%;
+    }
+    
+  .signUpNav  .signUpWrap h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    .signUpNav  .signUpWrap p{
+        font-size: 26px;
+        text-align: center;
+    } 
+
+
+    .signUpNav .callAction{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpNav .callAction button{
+        width: 80%;
+        height: 90px;
+        color: #4169E1;
+        background-color: white;
+        border-radius: 30px;
+        cursor: pointer;
+        transform: scale(1);
+        border: none;
+        font-weight: 800;
+        font-size: 30px;
+        font-family: "Roboto";
+}
+
+}
+@media screen and (width <= 428px){
+
+    .signUpNav{
+        width: 100%;
+        height: 50vh;
+    }
+
+   .signUpNav .signUpWrap{
+        width: 90%;
+        height: 80%;
+        gap: 5%;
+    }
+
+   .signUpNav .signUpWrap h4{
+        font-size: 14px;
+        color: white;
+        margin-top: 10%;
+    }
+    
+  .signUpNav  .signUpWrap h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .signUpNav  .signUpWrap p{
+        font-size: 16px;
+        text-align: center;
+    } 
+
+
+    .signUpNav .callAction{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpNav .callAction button{
+        width: 80%;
+        height: 42px;
+        color: #4169E1;
+        background-color: white;
+        border-radius: 30px;
+        cursor: pointer;
+        transform: scale(1);
+        border: none;
+        font-weight: 800;
+        font-size: 18px;
+        font-family: "Roboto";
+}
+
 }
 
 .teamBond{
@@ -743,6 +1768,161 @@
     border-bottom-right-radius: 20px;
 }
 
+.servLink{
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    
+    .teamBond{
+        width: 100%;
+        height: 80vh;
+    }
+    
+    .teamBondWrap{
+        flex-direction: column-reverse;
+        width: 85%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .teamBondRight{
+        width: 100%;
+        height: 50%;
+       display: flex;
+       justify-content: center;
+      align-items: center;
+    }
+
+
+    .teamBondLeft{
+        width: 100%;
+        height: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .topText{
+        width: 100%;
+        height: 15%;
+        display: flex;
+
+    }
+    .topText h6{
+        font-size: 25px;
+        color: #575452;
+        font-weight: 900;
+    }
+    .boldText{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: flex-start;
+        /* align-items: center; */
+    }
+    .boldText h1{
+        font-size: 70px;
+        width: 100%;
+    }
+
+    .paragraphText{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: flex-start;
+        /* align-items: center; */
+    }
+  
+    .paragraphText p{
+        font-size: 28px;
+        color: #575452;
+        width: 100%;
+        line-height: 1.5;
+    }
+
+    .teamNav p{
+        color: #E18C00;
+        font-weight: 900;
+        font-size: 25px;
+}
+
+}
+@media screen and (width <= 428px){
+    .teamBond{
+        width: 100%;
+        height: 80vh;
+    }
+    
+    .teamBondWrap{
+        flex-direction: column-reverse;
+        width: 85%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .teamBondRight{
+        width: 100%;
+        height: 50%;
+       display: flex;
+       justify-content: center;
+      align-items: center;
+    }
+
+
+    .teamBondLeft{
+        width: 100%;
+        height: 70%;
+      display: flex;
+      flex-direction: column;
+      gap: 10%;
+    }
+
+    .topText{
+        width: 100%;
+        height: 15%;
+        display: flex;
+
+    }
+    .topText h6{
+        font-size: 14px;
+        color: #575452;
+        font-weight: 500;
+    }
+    .boldText{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: flex-start;
+        /* align-items: center; */
+    }
+    .boldText h1{
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .paragraphText{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: flex-start;
+        /* align-items: center; */
+    }
+  
+    .paragraphText p{
+        font-size: 12px;
+        color: #575452;
+        width: 100%;
+        line-height: 1.5;
+    }
+
+
+}
 
 
 

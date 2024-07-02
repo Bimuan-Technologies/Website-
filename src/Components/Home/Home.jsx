@@ -17,11 +17,18 @@ import cutting from "../../assets/Images/cutting-edge.jpg"
 import excellence from "../../assets/Images/excellence.jpg"
 import innovate from "../../assets/Images/innovate3.jpg"
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
+import Dropdown from "../pages/Dropdown/Dropdown";
+import { useState } from "react";
+import DataMobile from "../Datas/Datamobile";
 
 const Home = () => {
+  const [show, setShow] = useState(false);
+
   return (
     <>
-      <Header />
+      <Header show={show} setShow={setShow}/>
+      {show === true ? <Dropdown /> : null}
       <div className="heroHolder">
         <div className="heroHolderWrap">
           <div className="heroHolderText">
@@ -33,9 +40,12 @@ const Home = () => {
             </p>
 
             <div className="started">
+              <Link  className="servLink" to="/contact">
               <button className="start">
                 <p>Contact Us</p>
               </button>
+              </Link>
+             
             </div>
           </div>
 
@@ -87,7 +97,10 @@ const Home = () => {
                   We are at the forefront of technological advancements,
                   offering cutting-edge solutions that transform your business.
                 </p>
+                <Link className="servLink" to="/service">
                 <button>Learn more</button>
+                </Link>
+               
               </div>
             </div>
 
@@ -98,7 +111,9 @@ const Home = () => {
                   We are at the forefront of technological advancements,
                   offering cutting-edge solutions that transform your business.
                 </p>
+                <Link className="servLink" to="/service">
                 <button>Learn more</button>
+                </Link>
               </div>
               <div className="bimuanCardsLefts">
                 <img src={solution} alt="client" />
@@ -115,7 +130,9 @@ const Home = () => {
                   We are at the forefront of technological advancements,
                   offering cutting-edge solutions that transform your business.
                 </p>
+                <Link className="servLink" to="/service">
                 <button>Learn more</button>
+                </Link>
               </div>
             </div>
 
@@ -126,7 +143,10 @@ const Home = () => {
                   We are at the forefront of technological advancements,
                   offering cutting-edge solutions that transform your business.
                 </p>
+                <Link  className="servLink" to="/service">
                 <button>Learn more</button>
+                </Link>
+                
               </div>
               <div className="bimuanCardsLefts">
                 <img src={excellence} alt="client" />
@@ -173,6 +193,41 @@ const Home = () => {
                 </div>
 
                 <div className="divButton">
+                  <button>Contact us</button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="serviceCardHolder-mobile">
+          <div className="serviceCardWrapper-mobile">
+            {DataMobile.map((e) => (
+              <div className="serviceCard-mobile">
+                <div
+                  className="circle-mobile"
+                  style={
+                    e.title === "WEB DEVELOPMENT"
+                      ? { backgroundColor: "#7B97EA" }
+                      : e.title == "BLOCKCHAIN"
+                      ? { backgroundColor: "#995F00" }
+                      : e.title == "AI OPTIMIZATION"
+                      ? { backgroundColor: "#A7B9F1" }
+                      : {}
+                  }
+                >
+                  <img src={e.image} alt="icon" />
+                </div>
+
+                <div className="titles-mobile">
+                  <h1>{e.title}</h1>
+                </div>
+
+                <div className="paragraph-mobile">
+                  <p>{e.desc}</p>
+                </div>
+
+                <div className="divButton-mobile">
                   <button>Contact us</button>
                 </div>
               </div>

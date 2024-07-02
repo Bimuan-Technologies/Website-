@@ -1,20 +1,34 @@
 import React from 'react'
-import './MembershipForm.css'
+import './Membership.css'
+import logo from "../../../assets/Images/logo.png";
+import { Link } from 'react-router-dom';
 
-const MembershipForm = () => {
+const Membership = () => {
   return (
-    <form>
-        <h1>Welcome to Bimuan</h1>
-        <p>Membership Form</p>
-        <div className="input-container">
-            <input type="text" placeholder="Fullname"/>
-            <input type="email" placeholder="Email"/>
-            <input type="text" placeholder="Stack"/>
-            <input type="text" placeholder="Reason for joining Bimuan"/>
-        </div>
-        <button>Send</button>
-    </form>
+    <div className='formHolders'>
+    <div className='formWraps'>
+      <Link to="/founder">
+      <img src={logo} alt='logo'/>
+      </Link>
+      
+        <form className='myForms'>
+          <h1>Welcome to Bimuan</h1>
+          <p>Tell us about your need and let us get your project moving</p>
+          <div className='formInputs'>
+            <input className='fieldd' type="text" placeholder='Fullname' />
+            <input className='fieldd' type="email" placeholder='Email' />
+            <input className='fieldd' type="text" placeholder='stack' />
+            <textarea className='fieldds' typeof='textArea'  placeholder='Quick note'/>
+          </div>
+          <button className='sendBtns'>Send</button>
+        </form>
+    </div>
+
+    </div>
   )
 }
 
-export default MembershipForm
+export default Membership
+
+
+

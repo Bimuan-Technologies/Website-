@@ -89,7 +89,7 @@
     cursor: pointer;
 }
 
-.links{
+.links-Platforms, .links-Resources, .links-community, .links-Company{
     width: 15%;
     height: 100%;
     display: flex;
@@ -98,16 +98,16 @@
     align-items: center;
     gap: 9%;
 }
-.links h6{
+.text{
     color: #4169E1;
-    font-size: 15px;
+    font-size: 17px;
 }
 
-.links p{
-        font-size: 12px;
+.links-P{
+        font-size: 14px;
 }
 
-.links p:hover{
+.links-P:hover{
     color: #E18C00;
     cursor: pointer;
 }
@@ -134,3 +134,95 @@
    align-items: center;
 }
 
+
+@media (min-width: 768px) and (max-width: 991px){
+    .follow {
+        width: 25%;
+    }
+
+    .follow p{
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .followLink{
+        width: 40%;
+        height: 20%;
+        display: flex;
+    }
+}
+
+@media screen and (width <= 428px){
+    .footerFrameWrap{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
+    
+    .footerTop{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        gap: 10%;
+    }
+    
+        .link{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .link .image{
+            width: 100%;
+            height: 50%;
+        }
+        .linkText h6{
+            font-size: 12px;
+            color: #4169E1;
+            font-weight: 800;
+        }
+
+
+        .links-Resources{
+            display: none;
+        }
+        .links-community{
+            display: none;
+        }
+
+        .links-Platforms, .links-Company{
+            gap: 10%;
+        }
+        .text{
+            font-size: 14px;
+        }
+
+        .links-P{
+            font-size: 12px;
+        }
+
+        .follow {
+            width: 25%;
+        }
+
+        .follow p{
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        .followLink{
+            width: 55%;
+            height: 20%;
+            display: flex;
+        }
+    }  
